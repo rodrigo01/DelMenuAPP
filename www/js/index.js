@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
 
-        var ref = window.open('https://delmenu.mx/', '_blank', 'zoom=no,toolbar=no');
+        var ref = window.open('https://delmenu.mx/', '_blank', 'location=no,zoom=no,toolbar=no');
 
        
     },
