@@ -27,6 +27,8 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('load', this.onDeviceReady, false);
+        document.addEventListener('backbutton', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
@@ -34,10 +36,10 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
-
         var ref = window.open('https://delmenu.mx/', '_blank', 'location=no,zoom=no,toolbar=no');
+        history.forward();
 
-       
     },
+
     
 };
